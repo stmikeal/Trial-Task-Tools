@@ -1,0 +1,1 @@
+#include "iostream"#include "../inc/structure/BalancedTree.h"using namespace std;int main() {    BalancedTree<int> tree{};    tree.insert(123);    tree.insert(111);    tree.insert(100);    tree.insert(99);    tree.insert(4);    tree.insert(3);    tree.insert(2);    tree.insert(1);    return 0;}
