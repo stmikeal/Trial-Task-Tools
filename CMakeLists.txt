@@ -3,6 +3,8 @@ project(DemoSyntacore)
 
 set(CMAKE_CXX_STANDARD 20)
 
+include_directories(inc)
+include_directories(inc/structure)
+
 add_executable(DemoSyntacore
-        inc/structure/BalancedTree.h
         src/main.cpp)
