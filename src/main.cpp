@@ -1,1 +1,1 @@
-#include "../inc/console_utils/StringParser.h"int main() {    parse_string();    return 0;}
+#include "console_utils/StringParser.h"int main() {    parse_string();    return 0;}
