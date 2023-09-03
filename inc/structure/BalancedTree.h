@@ -30,10 +30,6 @@ private:
             delete right_child;
         }
 
-        inline T get_left_value() { return this->left_child != nullptr ? this->left_child->data : static_cast<T>(INT32_MIN); }
-
-        inline T get_right_value() { return this->right_child != nullptr ? this->right_child->data : static_cast<T>(INT32_MAX); }
-
         inline int get_left_width() { return this->left_child != nullptr ? this->left_child->width : 0; }
 
         inline int get_right_width() { return this->right_child != nullptr ? this->right_child->width : 0; }
@@ -72,6 +68,10 @@ public:
 
     size_t count_less(const T &key, int depth = 0, Node *pivot = nullptr);
 };
+
+/**
+ * Implementation part.
+ */
 
 template<typename T>
 void BalancedTree<T>::_big_left_rotate(BalancedTree::Node *pivot) {

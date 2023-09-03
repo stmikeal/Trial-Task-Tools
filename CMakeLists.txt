@@ -3,8 +3,8 @@ project(DemoSyntacore)
 
 set(CMAKE_CXX_STANDARD 20)
 
-include_directories(inc)
-include_directories(inc/structure)
+include_directories(${CMAKE_SOURCE_DIR}/inc)
 
 add_executable(DemoSyntacore
-        src/main.cpp)
+        src/main.cpp
+        src/console_utils/StringParser.cpp)

@@ -1,1 +1,1 @@
-#include "iostream"#include "../inc/structure/BalancedTree.h"using namespace std;int main() {    BalancedTree<int> tree{};    tree.insert(8);    tree.insert(2);    tree.insert(-1);    cout << tree.min_at(1) << endl;    cout << tree.min_at(2) << endl;    cout << tree.count_less(3) << endl;    return 0;}
+#include "../inc/console_utils/StringParser.h"int main() {    parse_string();    return 0;}
